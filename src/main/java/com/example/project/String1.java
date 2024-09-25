@@ -38,6 +38,12 @@ public class String1 {
     	return true;
     }
     public void reverse() {
-        throw new UnsupportedOperationException("reverse() function is not supported yet.");
+    	char tmp;
+    	int len = length();
+        for(int i = 0; i < len; i++) {
+        	tmp = str[i];
+        	str[i] = str[len - 1 - i];
+        	str[len - 1 - i] = tmp;
+        }
     }
 }
