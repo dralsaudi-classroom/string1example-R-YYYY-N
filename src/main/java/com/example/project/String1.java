@@ -40,7 +40,7 @@ public class String1 {
     public void reverse() {
     	char tmp;
     	int len = length();
-        for(int i = 0; i < len; i++) {
+        for(int i = 0; i < len/2; i++) {
         	tmp = str[i];
         	str[i] = str[len - 1 - i];
         	str[len - 1 - i] = tmp;
